@@ -8,4 +8,4 @@ import scipy.stats as st
 
 print (st.norm.interval(alpha=0.95, loc=174.2, scale=np.sqrt(25)))
 
-print (st.t.interval(confidence=0.95, df=27-1, loc=174.2, scale=np.sqrt(25)))
+#сигма (диспа ген совокупности) известна, поэтому st.norm

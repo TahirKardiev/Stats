@@ -9,4 +9,5 @@ import scipy.stats as st
 IQs = [131, 125, 115, 122, 131, 115, 107, 99, 125, 111]
   
 
-print (st.norm.interval(alpha=0.95, loc=np.mean(IQs), scale=st.sem(IQs)))
+print (st.t.interval(alpha=0.95, loc=np.mean(IQs), scale=st.sem(IQs), df = len(IQs) - 1))
+#сигма (диспа ген совокупности) не известна, поэтому st.t
